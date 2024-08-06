@@ -11,12 +11,16 @@ const Sidebar = () => {
     return (
         <>
             <button className='sidebar_toggle' onClick={toggleSidebar}>
-                {isOpen ? '≪' : '≫'} {/* Используем символы Unicode или HTML-коды */}
+                {isOpen ? '≪' : '≫'} 
             </button>
             <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
                 <div>
                     {/* Содержимое sidebar */}
                     <h1>Sidebar</h1>
+                    <ul>
+                        <li>
+                        </li>
+                    </ul>
                 </div>
             </aside>
         </>
