@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./homePage.css";
-import logo from "../assets/logo.gif"; // Импорт изображения
+import logo from "../assets/logo.gif";
+import toggleSidebar from "./sidebar/sidebar";
 
 const services = [
     { name: 'Listen Up', icon: logo, link: 'https://listen-upp.netlify.app' } // Используйте полный URL для внешних ссылок
@@ -9,7 +10,9 @@ const services = [
 
 const Home = () => {
     return (
+        
         <div className="app-menu">
+            <toggleSidebar/>
             <div className="header">
                 <h1>Bulgass software</h1>
             </div>

@@ -1,0 +1,10 @@
+.sidebar{
+    width: 100px;
+    height: 100%;
+    background-color: black;
+}
+.sidebar_toggle{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
