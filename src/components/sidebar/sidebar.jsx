@@ -1,22 +1,26 @@
 import React, { useState } from 'react';
 import './sidebar.css';
 
- const toggleSidebar = () => {
-    setIsOpen(!isOpen);
+const Sidebar = () => {
+    const [isOpen, setIsOpen] = useState(false);
 
-    return(
+    const toggleSidebar = () => {
+        setIsOpen(!isOpen);
+    };
+
+    return (
         <>
             <button className='sidebar_toggle' onClick={toggleSidebar}>
-                {isOpen ? '<':'>'}     
+                {isOpen ? '≪' : '≫'} {/* Используем символы Unicode или HTML-коды */}
             </button>
-            <aside className= {`sidebar ${isOpen ? 'open' : ''}`}>
-                <div></div>
+            <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
+                <div>
+                    {/* Содержимое sidebar */}
+                    <h1>Sidebar</h1>
+                </div>
             </aside>
         </>
-     );
-    
+    );
 };
 
-export default toggleSidebar;
-
-
+export default Sidebar;
