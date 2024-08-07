@@ -30,7 +30,7 @@ const TutorialComponent = () => {
   
   const videos = [
     {
-      title: 'Все о принципах SOLID',
+      title: 'Про CI/CD за 5 минут',
       imageUrl: solid,
       videoUrl: 'https://www.youtube.com/watch?v=yeYRAXsUrow',
     },
@@ -40,12 +40,12 @@ const TutorialComponent = () => {
       videoUrl: 'https://www.youtube.com/watch?v=EeARyFrZsnU',
     },
     {
-        title: 'Про CI/CD за 5 минут',
+        title: 'Что такое Kubernetes',
         imageUrl: ci,
         videoUrl: 'https://www.youtube.com/watch?v=Y-hYifHkjMs',
     },
     {
-        title: 'Что такое Kubernetes',
+        title: 'Все о принципах SOLID',
         imageUrl: k8s,
         videoUrl: 'https://www.youtube.com/watch?v=klmpiHLSuXA',
     },
