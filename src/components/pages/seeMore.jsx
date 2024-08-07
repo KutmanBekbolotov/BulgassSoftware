@@ -1,13 +1,15 @@
 import React from "react";
+import '../sidebar/sidebar';
 import './seeMore.css';
+import Sidebar from "../sidebar/sidebar";
 
-const seeMore = () => {
-
-    return(
+const SeeMore = () => {
+    return (
         <div>
-            <h1>More information page</h1>
+            <Sidebar/>
+            <h1>More Information Page</h1>
         </div>
     );
 };
 
-export default seeMore;
+export default SeeMore;

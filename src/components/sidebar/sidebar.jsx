@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './sidebar.css';
 
 const Sidebar = () => {
@@ -11,16 +12,12 @@ const Sidebar = () => {
     return (
         <>
             <button className='sidebar_toggle' onClick={toggleSidebar}>
-                {isOpen ? '≪' : '≫'} 
+                {isOpen ? '≪' : '≫'}
             </button>
             <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
-                <div>
-                    {/* Содержимое sidebar */}
-                    <h1>Sidebar</h1>
-                    <ul>
-                        <li>
-                        </li>
-                    </ul>
+                <div className="sidebar-content">
+                    <Link to="/" className="sidebar-link" onClick={toggleSidebar}>Home</Link>
+                    <Link to="/see-more" className="sidebar-link" onClick={toggleSidebar}>More Information</Link>
                 </div>
             </aside>
         </>
