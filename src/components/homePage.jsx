@@ -1,6 +1,6 @@
 import React from "react";
 import "./homePage.css";
-import logo from "../assets/logo.gif";
+import logo from "../assets/icons/logo.gif";
 import Sidebar from "./sidebar/sidebar";
 
 const services = [

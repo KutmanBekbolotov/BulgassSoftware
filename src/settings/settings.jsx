@@ -1,13 +1,13 @@
 import React from "react";
-import SettingsComponent from "./settingsComponent";
+import SettingsPageComponent from "./settingsComponent";
 
-const Settings = () => {
+const SettingsPage = () => {
     
     return(
         <div className='settings'>
-            <SettingsComponent/>
+            <SettingsPageComponent/>
         </div>
     )
 }
 
-export default Settings;
+export default SettingsPage;

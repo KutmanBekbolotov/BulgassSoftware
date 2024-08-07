@@ -1,9 +1,9 @@
 import React from 'react';
 import Sidebar from '../components/sidebar/sidebar';
-import solid from '../assets/solid.jpg';
-import git from '../assets/git.png';
-import ci from '../assets/ci.png';
-import k8s from '../assets/k8s.jpg';
+import solid from '../assets/videoCovers/ci.png';
+import git from '../assets/videoCovers/git.png';
+import ci from '../assets/videoCovers/k8s.jpg';
+import k8s from '../assets/videoCovers/solid.jpg';
 
 const Tutorial = ({ title, imageUrl, videoUrl }) => (
   <div style={{ margin: '20px', textAlign: 'center' }}>
