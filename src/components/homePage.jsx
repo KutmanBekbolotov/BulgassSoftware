@@ -15,9 +15,14 @@ const services = [
 const Home = () => {
     return (
         <div className="app-menu">
+            <div className="container">
             <Sidebar />
             <div className="header">
                 <h1>Bulgass Software</h1>
+            </div>
+            <div className="weather-container">
+                <WeatherWidget />
+            </div>
             </div>
             <div className="services">
                 {services.map((service) => (
@@ -26,9 +31,6 @@ const Home = () => {
                         <span>{service.name}</span>
                     </a>
                 ))}
-            </div>
-            <div className="weather-container">
-                <WeatherWidget />
             </div>
         </div>
     );
