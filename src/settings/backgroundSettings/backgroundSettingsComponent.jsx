@@ -29,7 +29,17 @@ const BackgroundSettingsComponent = () => {
       const defaultGradient = gradients[0];
       setSelectedBackground(defaultGradient);
     }
-    document.body.style.background = savedBackground || gradients[0];
+    if (savedBackground && !gradients.includes(savedBackground)) {
+      document.body.style.backgroundImage = `url(${savedBackground})`;
+      document.body.style.backgroundSize = 'cover';
+      document.body.style.backgroundPosition = 'center';
+      document.body.style.backgroundRepeat = 'no-repeat';
+      document.body.style.backgroundAttachment = 'fixed'; 
+    } else {
+      document.body.style.backgroundImage = '';
+      document.body.style.background = savedBackground || gradients[0];
+      document.body.style.backgroundSize = 'cover';
+    }
   }, [savedBackground]);
 
   const handleBackgroundChange = (url) => {
@@ -38,18 +48,21 @@ const BackgroundSettingsComponent = () => {
 
   const handleSetBackground = () => {
     localStorage.setItem('background', selectedBackground);
-    document.body.style.background = selectedBackground;
-
     if (!gradients.includes(selectedBackground)) {
+      document.body.style.backgroundImage = `url(${selectedBackground})`;
       document.body.style.backgroundSize = 'cover';
       document.body.style.backgroundPosition = 'center';
+      document.body.style.backgroundRepeat = 'no-repeat';
+      document.body.style.backgroundAttachment = 'fixed'; 
     } else {
-      document.body.style.backgroundSize = 'auto';
+      document.body.style.backgroundImage = '';
+      document.body.style.background = selectedBackground;
+      document.body.style.backgroundSize = 'cover';
     }
   };
 
   return (
-    <div style={{ padding: '20px' }}>
+    <div style={{ padding: '20px', minHeight: '100vh' }}> 
       <Sidebar />
       <h2>Настройки фона</h2>
       <div>
@@ -126,4 +139,4 @@ const BackgroundSettingsComponent = () => {
   );
 };
 
-export default BackgroundSettingsComponent; 
+export default BackgroundSettingsComponent;

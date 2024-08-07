@@ -4,6 +4,8 @@ import solid from '../assets/videoCovers/ci.png';
 import git from '../assets/videoCovers/git.png';
 import ci from '../assets/videoCovers/k8s.jpg';
 import k8s from '../assets/videoCovers/solid.jpg';
+import typescript from '../assets/videoCovers/typescript.png';
+import developer from '../assets/videoCovers/developer.png';
 
 const Tutorial = ({ title, imageUrl, videoUrl }) => (
   <div style={{ margin: '20px', textAlign: 'center' }}>
@@ -20,7 +22,7 @@ const Tutorial = ({ title, imageUrl, videoUrl }) => (
         }}
       />
     </a>
-    <h3>{title}</h3>
+    <h3 style={{ color: 'white' }}>{title}</h3>
   </div>
 );
 
@@ -46,6 +48,16 @@ const TutorialComponent = () => {
         title: 'Что такое Kubernetes',
         imageUrl: k8s,
         videoUrl: 'https://www.youtube.com/watch?v=klmpiHLSuXA',
+    },
+    {
+      title: 'Что нужно знать о TypeScript',
+      imageUrl: typescript,
+      videoUrl: 'https://www.youtube.com/watch?v=9yZuZdWMDRI',
+    },
+    {
+      title: 'Как стать разработчико с нуля',
+      imageUrl: developer,
+      videoUrl: 'https://www.youtube.com/watch?v=9yZuZdWMDRI',
     },
   ];
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Sidebar from '../components/sidebar/sidebar';
 import backgroundIcon from '../assets/icons/settingsIcon.png'; 
+import sidebar from '../assets/icons/sidebar.png';
 
 const SettingsPageComponent = () => {
   return (
@@ -12,8 +13,14 @@ const SettingsPageComponent = () => {
         <Link to="/settings/background">
           <div style={iconStyle}>
             <img src={backgroundIcon} alt="Background Settings" style={iconImageStyle} />
-            <p>Фон</p>
+            <p>Фон <style color='white'/></p>
           </div>
+        </Link>
+        <Link to="/settings/sidebarSettings">
+            <div style={iconStyle}>
+                <img src={sidebar} alt="Sidebar Settings" style={iconImageStyle} />
+                <p>Sidebar <style color='white'/></p>
+            </div>
         </Link>
       </div>
     </div>
@@ -26,7 +33,8 @@ const iconStyle = {
   alignItems: 'center',
   margin: '20px',
   cursor: 'pointer',
-  textAlign: 'center'
+  textAlign: 'center',
+  color: '#white',
 };
 
 const iconImageStyle = {
