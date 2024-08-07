@@ -18,6 +18,8 @@ const Sidebar = () => {
                 <div className="sidebar-content">
                     <Link to="/" className="sidebar-link" onClick={toggleSidebar}>Home</Link>
                     <Link to="/see-more" className="sidebar-link" onClick={toggleSidebar}>More Information</Link>
+                    <Link to="/tutorial" className="sidebar-link" onClick={toggleSidebar}>Tutorials</Link>
+                    <Link to="/settings" className="sidebar-link" onClick={toggleSidebar}>Settings</Link>
                 </div>
             </aside>
         </>

@@ -1,0 +1,59 @@
+.SeeMore header {
+    background-color: #2b2f4b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .SeeMore .header-text h1 {
+    font-size: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .SeeMore .header-text h3 {
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .SeeMore .courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #f0f0f0;
+  }
+  
+  .SeeMore .course {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .SeeMore .course h2 {
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: #2b2f4b;
+  }
+  
+  .SeeMore .course p {
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    color: #333333;
+    line-height: 1.5;
+  }
+  
+  .SeeMore footer {
+    background-color: #2b2f4b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .SeeMore footer p {
+    font-size: 0.9rem;
+  }
+  
