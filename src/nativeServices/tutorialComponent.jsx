@@ -55,7 +55,7 @@ const TutorialComponent = () => {
       videoUrl: 'https://www.youtube.com/watch?v=9yZuZdWMDRI',
     },
     {
-      title: 'Как стать разработчико с нуля',
+      title: 'Как стать разработчиком с нуля',
       imageUrl: developer,
       videoUrl: 'https://www.youtube.com/watch?v=9yZuZdWMDRI',
     },

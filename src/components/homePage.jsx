@@ -1,16 +1,18 @@
 import React from "react";
 import "./homePage.css";
 import logo from "../assets/icons/logo.gif";
+import bulgass from "../assets/icons/bulgass.png"; 
 import Sidebar from "./sidebar/sidebar";
 
 const services = [
-    { name: 'Listen Up', icon: logo, link: 'https://listen-upp.netlify.app' }
+    { name: 'Listen Up', icon: logo, link: 'https://listen-upp.netlify.app' },
+    { name: 'BSW', icon: bulgass, link: 'https://bulgass-soft-works.netlify.app' } 
 ];
 
 const Home = () => {
     return (
         <div className="app-menu">
-            <Sidebar /> 
+            <Sidebar />
             <div className="header">
                 <h1>Bulgass Software</h1>
             </div>
