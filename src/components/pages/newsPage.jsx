@@ -26,18 +26,18 @@ const NewsPage = () =>{
                         <div className="news_body_grid">
                             <div className="news_body_grid2">
                                 <img width={500} src="https://ichef.bbci.co.uk/news/1536/cpsprodpb/d030/live/29de6920-556e-11ef-b2d2-cdb23d5d7c5b.jpg.webp" alt="" />
-                                <div className="news_body_text">Стив Розенберг: вторжение Украины показывает, что война России не идет по плану</div>
-                                <div className="news_body_text2">Атака на «Курск» побудила некоторых россиян призвать к более масштабному военному наступлению на Украину.</div>
-                                <div className="news_body_text3">6 часов назад | Европа</div>
+                                <p  className="news_body_text">Стив Розенберг: вторжение Украины показывает, что война России не идет по плану</p >
+                                <p  className="news_body_text2">Атака на «Курск» побудила некоторых россиян призвать к более масштабному военному наступлению на Украину.</p >
+                                <p  className="news_body_text3">6 часов назад | Европа</p >
                             </div>
                             <div className="news_body_grid2">
                                 <img width={250} height={150} src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/09db/live/c481eed0-557c-11ef-aebc-6de4d31bf5cd.jpg.webp" alt="" />
-                                <div className="news_body_text4">Юнус принял присягу в качестве временного лидера Бангладеш</div>
-                                <div className="news_body_text2">84-летний лауреат Нобелевской премии был выбран лидерами студенческого протеста после того, как шейх Хасина бежала из страны.</div>
-                                <div className="news_body_text3">2 часа назад | Азия</div>
-                                <div className="news_body_text4">Он новый вице-президент. Для своих студентов он мистер Вальц</div>
-                                <div className="news_body_text2">Напарник Камалы Харрис преподавал в средней школе, и те, кого он учил, говорят, что он был «талантливым педагогом».</div>
-                                <div className="news_body_text3">1 час назад | США и Канада</div>
+                                <p className="news_body_text4">Юнус принял присягу в качестве временного лидера Бангладеш</p>
+                                <p className="news_body_text2">84-летний лауреат Нобелевской премии был выбран лидерами студенческого протеста после того, как шейх Хасина бежала из страны.</p >
+                                <p  className="news_body_text3">2 часа назад | Азия</p >
+                                <p  className="news_body_text4">Он новый вице-президент. Для своих студентов он мистер Вальц</p >
+                                <p  className="news_body_text2">Напарник Камалы Харрис преподавал в средней школе, и те, кого он учил, говорят, что он был «талантливым педагогом».</p >
+                                <p  className="news_body_text3">1 час назад | США и Канада</p >
                             </div>
                             <div className="news_body_grid2"></div>
                             <div className="news_body_grid2"></div>
