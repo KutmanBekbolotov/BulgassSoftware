@@ -5,8 +5,7 @@ import SeeMore from './components/pages/seeMore';
 import Tutorial from "./nativeServices/tutorial";
 import Settings from "./settings/settings";
 import BackgroundSettings from "./settings/backgroundSettings/backgroundSettings";
-import SidebarSettings from "./settings/sidebarSettings/sidebarSettings";
-import BackgroundSettings from "./settings/backgroundSettings/backgroundSettings"; 
+import SidebarSettings from "./settings/sidebarSettings/sidebarSettings"; 
 import NewsPage from "./components/pages/newsPage";
 
 
