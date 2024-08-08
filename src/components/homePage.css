@@ -1,5 +1,8 @@
+
 body{
-    background-color: rgb(170, 170, 170);
+  background-color: rgb(170, 170, 170);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }
 
 .header{
@@ -28,10 +31,7 @@ h1{
   align-items: center;
 
 }
-.weather-container{
-  margin-top: 5%;
-}
-  
+
 .menu-item {
   display: flex;
   flex-direction: column;
@@ -41,6 +41,7 @@ h1{
   margin-top: 5%;
   margin-left: 10%;
   width: auto;
+  text-align: center;
 }
 
 .services{
@@ -50,6 +51,8 @@ h1{
 
 .icon {
   width: 60%;
+  width: 80%;
+  height: 80%;
   border-radius: 10px;
 }
 
@@ -78,11 +81,22 @@ h1{
 }
 
 .header-image{
-  width: 100px;
+  width: 15%;
   height: auto;
-  margin-right: 600px;
+  margin-right: 40%;
 }
-
+.services{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
  
 
-  
+.clock-container{
+  margin-right: 15%;
+  margin-top: -10%;
+}
+.weather-container{
+  margin-top: 5%;
+  margin-left: 20%;
+}
