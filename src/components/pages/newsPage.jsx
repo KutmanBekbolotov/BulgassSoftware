@@ -5,7 +5,6 @@ import './newsPage.css';
 const NewsPage = () =>{
     return(
         <>
-            <button><a href="../">Назад</a></button>
             <div className="container">
                 <Sidebar/>
                 <div className="news_container">
