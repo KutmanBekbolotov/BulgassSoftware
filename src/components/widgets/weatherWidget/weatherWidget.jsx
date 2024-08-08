@@ -8,7 +8,7 @@ const WeatherWidget = () => {
     useEffect(() => {
         const fetchWeather = async () => {
             try {
-                const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Moscow&appid=6363200951683da75954f290fcc97cf0&units=metric`);
+                const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Bishkek&appid=6363200951683da75954f290fcc97cf0&units=metric`);
                 const data = await response.json();
                 if (response.ok) {
                     setWeatherData(data);
