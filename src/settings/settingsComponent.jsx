@@ -16,7 +16,7 @@ const SettingsPageComponent = () => {
             <p>Фон <style color='white'/></p>
           </div>
         </Link>
-        <Link to="/settings/sidebarSettings">
+        <Link to={"/settings/sidebar"}>
             <div style={iconStyle}>
                 <img src={sidebar} alt="Sidebar Settings" style={iconImageStyle} />
                 <p>Sidebar <style color='white'/></p>
