@@ -19,7 +19,7 @@ const Tutorial = ({ title, imageUrl, videoUrl }) => (
           width: '300px',          
           height: '200px',         
           objectFit: 'cover',      
-          borderRadius: '8px',
+          borderRadius: '10px',
           marginBottom: '10px'
         }}
       />
