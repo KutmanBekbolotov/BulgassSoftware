@@ -18,14 +18,15 @@ const Home = () => {
     return (
         <div className="app-menu">
             <div className="container">
-            <Sidebar />
-            <div className="header">
-                <h1>Bulgass OS</h1>
-                <pre>version: developent</pre>
-            </div>
-            <div className="weather-container">
-                <WeatherWidget />
-            </div>
+                <Sidebar />
+                <div className="header">
+                    <img src={bulgass} alt="Header" className="header-image" />
+                    <h1>Bulgass OS</h1>
+                    <pre>version: development</pre>
+                </div>
+                <div className="weather-container">
+                    <WeatherWidget />
+                </div>
             </div>
             <div className="services">
                 {services.map((service) => (
