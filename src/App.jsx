@@ -5,6 +5,7 @@ import SeeMore from './components/pages/seeMore';
 import Tutorial from "./nativeServices/tutorial";
 import Settings from "./settings/settings";
 import BackgroundSettings from "./settings/backgroundSettings/backgroundSettings"; 
+import NewsPage from "./components/pages/newsPage";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                     <Route path="/tutorial" element={<Tutorial />} />
                     <Route path="/settings" element={<Settings />} />
                     <Route path="/settings/background" element={<BackgroundSettings />} /> 
+                    <Route path="/newsPage" element={<NewsPage />} />
                 </Routes>
             </div>
         </Router>
