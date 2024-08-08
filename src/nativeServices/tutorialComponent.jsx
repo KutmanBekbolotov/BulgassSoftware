@@ -6,6 +6,8 @@ import ci from '../assets/videoCovers/k8s.jpg';
 import k8s from '../assets/videoCovers/solid.jpg';
 import typescript from '../assets/videoCovers/typescript.png';
 import developer from '../assets/videoCovers/developer.png';
+import api from '../assets/videoCovers/api.png';
+import linux from '../assets/videoCovers/linux.png';
 
 const Tutorial = ({ title, imageUrl, videoUrl }) => (
   <div style={{ margin: '20px', textAlign: 'center' }}>
@@ -58,6 +60,16 @@ const TutorialComponent = () => {
       title: 'Как стать разработчиком с нуля',
       imageUrl: developer,
       videoUrl: 'https://www.youtube.com/watch?v=9yZuZdWMDRI',
+    },
+    {
+      title: 'Что такое API',
+      imageUrl: api,
+      videoUrl: 'https://www.youtube.com/watch?v=fXa_2rllZTI',
+    },
+    {
+      title: 'Про Linux за 5 минут',
+      imageUrl: linux,
+      videoUrl: 'https://www.youtube.com/watch?v=t2iMS8V8v_U',
     },
   ];
 
