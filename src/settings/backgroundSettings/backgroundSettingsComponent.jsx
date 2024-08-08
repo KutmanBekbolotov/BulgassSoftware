@@ -3,17 +3,22 @@ import Sidebar from '../../components/sidebar/sidebar';
 import background1 from '../../assets/backgrounds/background1.jpg';
 import background2 from '../../assets/backgrounds/background2.jpeg';
 import background3 from '../../assets/backgrounds/background3.png';
+import background4 from '../../assets/backgrounds/ backgound4.jpeg';
+import background5 from '../../assets/backgrounds/background5.jpeg';
 
 const backgrounds = [
   { url: background1, label: 'Background 1' },
   { url: background2, label: 'Background 2' },
   { url: background3, label: 'Background 3' },
+  { url: background4, label: 'Background 4' },
+  { url: background5, label: 'Background 5' },
 ];
 
 const gradients = [
-  'linear-gradient(to right, #ff7e5f, #feb47b)',
-  'linear-gradient(to right, #6a11cb, #2575fc)',
-  'linear-gradient(to right, #ff9a9e, #fad0c4)'
+  'linear-gradient(to right, #ef32d9, #89fffd)', // azure pop
+  'linear-gradient(to right, #3a6186, #89253e)', // love couples
+  'linear-gradient(to right, #4ecdc4, #556270)', // disco
+  'linear-gradient(to right, #a1ffce, #faffd1)'  // limeade
 ];
 
 const BackgroundSettingsComponent = () => { 
@@ -108,18 +113,6 @@ const BackgroundSettingsComponent = () => {
             ))}
           </div>
         )}
-      </div>
-      <div
-        style={{
-          marginTop: '20px',
-          height: '300px',
-          background: selectedBackground,
-          backgroundSize: isImageBackground ? 'cover' : 'auto',
-          backgroundPosition: 'center',
-          border: '1px solid black'
-        }}
-      >
-        <p style={{ color: 'white', textAlign: 'center', paddingTop: '120px' }}>Превью выбранного фона</p>
       </div>
       <button 
         onClick={handleSetBackground}

@@ -17,14 +17,10 @@ body{
 h1{
     text-align: center;
     color: rgb(255, 255, 255);
+    margin-top: -90px;
 }
 
-.app-menu {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 10px;
-    padding: 20px; */
-}
+
 .container{
   display: flex;
   flex-direction: column;
@@ -79,6 +75,12 @@ h1{
         width: 25%;
         border-radius: 10px;
     }
+}
+
+.header-image{
+  width: 100px;
+  height: auto;
+  margin-right: 600px;
 }
 
  
