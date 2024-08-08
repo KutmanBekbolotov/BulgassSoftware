@@ -19,12 +19,7 @@ h1{
     color: rgb(255, 255, 255);
 }
 
-.app-menu {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 10px;
-    padding: 20px; */
-}
+
 .container{
   display: flex;
   flex-direction: column;
