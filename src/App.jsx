@@ -6,6 +6,9 @@ import Tutorial from "./nativeServices/tutorial";
 import Settings from "./settings/settings";
 import BackgroundSettings from "./settings/backgroundSettings/backgroundSettings";
 import SidebarSettings from "./settings/sidebarSettings/sidebarSettings";
+import BackgroundSettings from "./settings/backgroundSettings/backgroundSettings"; 
+import NewsPage from "./components/pages/newsPage";
+
 
 function App() {
     return (
@@ -18,6 +21,8 @@ function App() {
                     <Route path="/settings" element={<Settings />} />
                     <Route path="/settings/background" element={<BackgroundSettings />} />
                     <Route path="/settings/sidebar" element={<SidebarSettings/>} />
+                    <Route path="/settings/background" element={<BackgroundSettings />} /> 
+                    <Route path="/newsPage" element={<NewsPage />} />
                 </Routes>
             </div>
         </Router>

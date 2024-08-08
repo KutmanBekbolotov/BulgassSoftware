@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+}
+.news_container{
+    width: 900px;
+    height: 1000px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 5px;
+    margin-top: 0px;
+}
+.news_header{
+    width: 100%;
+    height: 250px;
+    border-bottom: 0.5px solid black;
+    border-radius: 5px;
+}
+.news_header2{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.regis_voiti{
+    display: flex;
+}
+.regis{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: aliceblue;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+.voiti{
+    width: 100px;
+    height: 30px;
+    align-content: center;
+    text-align: center;
+}
+.bbc_img{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
