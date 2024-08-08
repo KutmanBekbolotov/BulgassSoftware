@@ -20,7 +20,8 @@ const Home = () => {
             <div className="container">
             <Sidebar />
             <div className="header">
-                <h1>Bulgass Software</h1>
+                <h1>Bulgass OS</h1>
+                <pre>version: developent</pre>
             </div>
             <div className="weather-container">
                 <WeatherWidget />
