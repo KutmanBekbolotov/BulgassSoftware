@@ -2,17 +2,17 @@ svg {
   position: relative;
   width: 400px;
   height: 290px;
-  background: linear-gradient(black 60%, #215769 100%);
+  background: linear-gradient(black 60%, #000000 100%);
   border-radius: 15px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 1);
   overflow: hidden; 
   margin-right: 210px;
-  margin-top: -55px;
+  margin-top: -50px;
 }
 
 .bgDot {
   stroke: none;
-  fill: #215769;
+  fill: #000000;
 }
 
 .clockCircle {
@@ -22,7 +22,7 @@ svg {
 
 .clockArc {
   fill: none;
-  stroke: #1bbccb; 
+  stroke: #ffffff; 
 }
 
 .clockDot {
