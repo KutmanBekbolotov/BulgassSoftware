@@ -4,12 +4,17 @@ import Sidebar from "../../components/sidebar/sidebar";
 
 const SidebarSettingsComponent = () => {
 
+    const [changeSide, setChangeSide] = useState(false);
+
+    const rightSide = () => {
+        setChangeSide(!changeSide);
+    };
 
     return (
         <div>
             <Sidebar/>
             <div className={"changeButton"}>
-                <button style={{
+                <button onClick={rightSide} style={{
                     marginLeft: "50%",
                     marginTop: "10%"
                 }}>

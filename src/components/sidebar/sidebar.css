@@ -62,8 +62,21 @@
     display: flex;
     flex-direction: column;
 }
-
-
+.rightSide {
+    position: fixed;
+    top: 0;
+    right: 2%;
+    width: 20%;
+    height: 100%;
+    background-color: #0e5fac;
+    border-radius: 15px;
+    overflow-x: hidden;
+    transition: transform 0.5s ease;
+    transform: translateX(-250px);
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
 
 .sidebar.open {
     transform: translateX(0);
@@ -73,6 +86,20 @@
     position: absolute;
     top: 2%;
     left: 2%;
+    background-color: #444;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    padding: 1.5%;
+    cursor: pointer;
+    font-size: 1rem;
+    z-index: 1000;
+}
+
+.sidebar_toggle_right {
+    position: absolute;
+    top: 2%;
+    right: 2%;
     background-color: #444;
     border-radius: 15px;
     color: white;
