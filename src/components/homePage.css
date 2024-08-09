@@ -57,7 +57,7 @@ h1{
 
 .menu-item:hover {
   backdrop-filter: blur(10px);
-  background-color: rgb(69, 64, 64);
+  background-color: rgb(0, 0, 0, 0, 0,9);
   border-radius: 10px;
 }
 @media screen and (max-width: 768px){

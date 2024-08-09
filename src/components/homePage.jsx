@@ -7,12 +7,14 @@ import note from "../assets/icons/note.jpg";
 import Sidebar from "./sidebar/sidebar";
 import WeatherWidget from "./widgets/weatherWidget/weatherWidget";
 import Clock from "./widgets/clockWidget/clockWidget"
+import instagram1 from "../assets/icons/instagram1.webp";
 
 const services = [
     { name: 'Listen Up', icon: logo, link: 'https://listen-upp.netlify.app' },
     { name: 'BSW', icon: bulgass, link: 'https://bulgass-soft-works.netlify.app' },
     { name: 'Learn React', icon: react, link: 'https://legacy.reactjs.org/tutorial/tutorial.html'}, 
     { name: 'Note', icon: note, link: 'https://onlinenotepad.org/notepad'},
+    {name: 'Instagram', icon: instagram1, link: 'https://www.instagram.com/bulgass.it/'},
 ];
 
 const Home = () => (
