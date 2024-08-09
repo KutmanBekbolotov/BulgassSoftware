@@ -82,3 +82,15 @@
 .sidebar-link:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 768px){
+    .sidebar{
+        width: 150px;
+        right: 15px;
+    }
+
+    .sidebar-content{
+        padding: 4%;
+        margin-top: 50%;
+    }
+}
