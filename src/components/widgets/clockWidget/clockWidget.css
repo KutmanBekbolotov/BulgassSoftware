@@ -1,127 +1,61 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
-.App {
-  font-family: sans-serif;
+svg {
+  position: relative;
+  width: 400px;
+  height: 290px;
+  background: linear-gradient(black 60%, #215769 100%);
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+  overflow: hidden; 
+  margin-right: 210px;
+  margin-top: -55px;
 }
 
-.clock {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.9);
-  font-size: 24px;
-  color: #fff;
-  text-align: center;
-  margin-top: 115px;
-  margin-left: 25px;
+.bgDot {
+  stroke: none;
+  fill: #215769;
 }
 
-.clock::after {
-  background: #aaa;
-  content: "";
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 2px solid #fff;
+.clockCircle {
+  fill: none;
+  stroke: #2a2a2a;
 }
 
-.hour_hand {
-  position: absolute;
-  width: 6px;
-  height: 60px;
-  background: #222;
-  top: 28%;
-  left: 49%;
-  transform-origin: bottom;
+.clockArc {
+  fill: none;
+  stroke: #1bbccb; 
 }
 
-.min_hand {
-  position: absolute;
-  width: 4px;
-  height: 80px;
-  background: #444;
-  top: 20.02%;
-  left: 49%;
-  transform-origin: bottom;
+.clockDot {
+  fill: #1bbccb;
 }
 
-.sec_hand {
-  position: absolute;
-  width: 2px;
-  height: 118px;
-  background: red;
-  top: 3.5%;
-  left: 50%;
-  transform-origin: bottom;
+.caption,
+.timeText {
+  transform: translateX(-2px); 
 }
 
-.clock span {
-  position: absolute;
+.dayText,
+.dateText{
+  transform: translateX(-25px);
+}
+
+.caption {
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 700;
+  font-weight: 300;
+  fill: #f0f0f0;
 }
 
-.twelve {
-  top: 10px;
-  left: 46%;
+.dayText {
+  font-size: 0.9rem; 
 }
 
-.one {
-  top: 10%;
-  right: 26%;
+.dateText {
+  font-size: 1.2rem; 
+  font-weight: 400;
 }
 
-.eleven {
-  top: 10%;
-  left: 26%;
-}
-
-.two {
-  top: 25%;
-  right: 10%;
-}
-
-.three {
-  right: 10px;
-  top: 46%;
-}
-
-.four {
-  right: 30px;
-  top: 65%;
-}
-
-.five {
-  right: 68px;
-  top: 80%;
-}
-
-.six {
-  bottom: 9px;
-  left: 48%;
-}
-
-.seven {
-  left: 75px;
-  top: 80%;
-}
-
-.eight {
-  left: 30px;
-  top: 67%;
-}
-
-.nine {
-  left: 10px;
-  top: 46%;
-}
-
-.ten {
-  top: 25%;
-  left: 10%;
+.timeText {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;   font-weight: 200;
+  fill: white;
 }

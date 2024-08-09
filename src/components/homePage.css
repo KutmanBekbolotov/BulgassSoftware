@@ -44,12 +44,12 @@ h1 {
 .services {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.5rem; 
+  gap: 0.5rem;
 }
 
 .icon {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
   transition: transform 0.3s ease;
@@ -82,12 +82,36 @@ h1 {
 
 @media screen and (max-width: 768px) {
   .services {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .clock-container, .weather-container {
+    margin-top: 2%;
+    margin-left: 0;
+    margin-right: 0;
+    transform: scale(0.8);
   }
 }
 
 @media screen and (max-width: 480px) {
   .services {
-    grid-template-columns: 1fr; 
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .clock-container, .weather-container {
+    margin-top: 2%;
+    margin-left: 0;
+    margin-right: 0;
+    transform: scale(0.7);
   }
 }
