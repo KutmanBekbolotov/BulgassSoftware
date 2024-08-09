@@ -22,7 +22,8 @@
     justify-content: space-around;
 }
 .header_img{
-    display: none;
+    width: 170px;
+    margin-top: -29px;
 }
 .regis_voiti{
     display: flex;

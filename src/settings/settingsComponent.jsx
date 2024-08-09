@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Sidebar from '../components/sidebar/sidebar';
 import backgroundIcon from '../assets/icons/settingsIcon.png'; 
 import sidebar from '../assets/icons/sidebar.png';
+import "./settings.css";
 
 const SettingsPageComponent = () => {
   return (
