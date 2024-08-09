@@ -14,12 +14,6 @@ const SidebarSettingsComponent = () => {
         <div>
             <Sidebar/>
             <div className={"changeButton"}>
-                <button onClick={rightSide} style={{
-                    marginLeft: "50%",
-                    marginTop: "10%"
-                }}>
-                    change
-                </button>
             </div>
         </div>
     );

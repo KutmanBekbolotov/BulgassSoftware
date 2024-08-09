@@ -67,7 +67,12 @@
 }
 
 .sidebar-content {
-    margin-top: 30%; 
+    margin-top: 30%;
+    padding: 10%;
+}
+.sidebar-content-right{
+    margin-top: 30%;
+    margin-left: 50%;
     padding: 10%;
 }
 
@@ -81,4 +86,19 @@
 
 .sidebar-link:hover {
     text-decoration: underline;
+}
+
+.changeButton{
+    width: 50%;
+    bottom: 5%;
+    margin-top: 30%;
+    padding: 10%;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    background: none;
+    text-align: center;
+    border: none;
+    cursor: pointer;
 }
