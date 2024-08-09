@@ -84,7 +84,3 @@ const TutorialComponent = () => {
 };
 
 export default TutorialComponent;
-// https://www.youtube.com/watch?v=yeYRAXsUrow solid
-// https://www.youtube.com/watch?v=EeARyFrZsnU ci/cd
-// https://www.youtube.com/watch?v=klmpiHLSuXA k8s
-// 
