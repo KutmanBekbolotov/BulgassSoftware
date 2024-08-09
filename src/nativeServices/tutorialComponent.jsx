@@ -34,7 +34,7 @@ const TutorialComponent = () => {
     {
       title: 'Про CI/CD за 5 минут',
       imageUrl: solid,
-      videoUrl: 'https://www.youtube.com/watch?v=yeYRAXsUrow',
+      videoUrl: 'https://www.youtube.com/watch?v=Y-hYifHkjMs&t=2s',
     },
     {
       title: 'Git и GitHub для новичков',
@@ -44,12 +44,12 @@ const TutorialComponent = () => {
     {
         title: 'Что такое Kubernetes',
         imageUrl: ci,
-        videoUrl: 'https://www.youtube.com/watch?v=Y-hYifHkjMs',
+        videoUrl: 'https://www.youtube.com/watch?v=klmpiHLSuXA&t=1s',
     },
     {
         title: 'Все о принципах SOLID',
         imageUrl: k8s,
-        videoUrl: 'https://www.youtube.com/watch?v=klmpiHLSuXA',
+        videoUrl: 'https://www.youtube.com/watch?v=yeYRAXsUrow&t=1s',
     },
     {
       title: 'Что нужно знать о TypeScript',
@@ -59,7 +59,7 @@ const TutorialComponent = () => {
     {
       title: 'Как стать разработчиком с нуля',
       imageUrl: developer,
-      videoUrl: 'https://www.youtube.com/watch?v=9yZuZdWMDRI',
+      videoUrl: 'https://www.youtube.com/watch?v=rRPn65GreMI',
     },
     {
       title: 'Что такое API',
@@ -84,3 +84,7 @@ const TutorialComponent = () => {
 };
 
 export default TutorialComponent;
+// https://www.youtube.com/watch?v=yeYRAXsUrow solid
+// https://www.youtube.com/watch?v=EeARyFrZsnU ci/cd
+// https://www.youtube.com/watch?v=klmpiHLSuXA k8s
+// 
