@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './sidebar.css';
+import changeSide from '../../settings/settingsComponent';
 
 const Sidebar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ const Sidebar = () => {
 
     return (
         <>
-            <button className='sidebar_toggle' onClick={toggleSidebar}>
+            <button className={!changeSide ? 'sidebar_toggle_right' : 'sidebar_toggle'} onClick={toggleSidebar}>
                 {isOpen ? '≪' : '≫'}
             </button>
             <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
