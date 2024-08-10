@@ -1,7 +1,7 @@
 import React from "react";
 import OnlineBooks from "./libaryComponent";
 
-const Books = () => {
+const books = () => {
 
     return(
         <div className='books'>
@@ -9,4 +9,4 @@ const Books = () => {
         </div>
     );
 };
-export default Books;
+export default books;
