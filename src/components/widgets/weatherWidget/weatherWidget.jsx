@@ -6,9 +6,9 @@ const WeatherWidget = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        const fetchWeather = async () => {
+        const fetchWeather = async (lat, lon) => {
             try {
-                const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Bishkek&appid=6363200951683da75954f290fcc97cf0&units=metric`);
+                const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=6363200951683da75954f290fcc97cf0&units=metric`);
                 const data = await response.json();
                 if (response.ok) {
                     setWeatherData(data);
@@ -19,7 +19,24 @@ const WeatherWidget = () => {
                 setError(error.message);
             }
         };
-        fetchWeather();
+
+        const getLocation = () => {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const { latitude, longitude } = position.coords;
+                        fetchWeather(latitude, longitude);
+                    },
+                    (error) => {
+                        setError('Не удалось получить местоположение.');
+                    }
+                );
+            } else {
+                setError('Geolocation не поддерживается этим браузером.');
+            }
+        };
+
+        getLocation();
     }, []);
 
     if (error) {
