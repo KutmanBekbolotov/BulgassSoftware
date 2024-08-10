@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Sidebar from '../../components/sidebar/sidebar';
 import background1 from '../../assets/backgrounds/background1.jpg';
-import background2 from '../../assets/backgrounds/background2.jpeg';
+import background2 from '../../assets/backgrounds/background2.jpg';
 import background3 from '../../assets/backgrounds/background3.png';
-import background4 from '../../assets/backgrounds/ backgound4.jpeg';
-import background5 from '../../assets/backgrounds/background5.jpeg';
+import background4 from '../../assets/backgrounds/background4.jpg';
+import background5 from '../../assets/backgrounds/background5.jpg';
+import background6 from '../../assets/backgrounds/background6.jpg';
 
 const backgrounds = [
   { url: background1, label: 'Background 1' },
@@ -12,6 +13,7 @@ const backgrounds = [
   { url: background3, label: 'Background 3' },
   { url: background4, label: 'Background 4' },
   { url: background5, label: 'Background 5' },
+  { url: background6, label: 'Background 6' },
 ];
 
 const gradients = [
