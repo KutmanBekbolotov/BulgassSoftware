@@ -1,6 +1,6 @@
 import React from 'react';
-import Sidebar from "../sidebar/sidebar";
-import './onlineBooks.css'; 
+import Sidebar from "../components/sidebar/sidebar";
+import './libary.css'; 
 const books = [
   {
     title: 'Book 1',
