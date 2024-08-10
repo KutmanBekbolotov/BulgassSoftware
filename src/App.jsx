@@ -8,6 +8,7 @@ import BackgroundSettings from "./settings/backgroundSettings/backgroundSettings
 import SidebarSettings from "./settings/sidebarSettings/sidebarSettings"; 
 import NewsPage from "./components/pages/newsPage";
 import "./App.css";
+import OnlineBooks from "./nativeServices/libaryComponent";
 
 function App() {
     const [bgColor, setBgColor] = useState(window.getComputedStyle(document.body).backgroundColor);
@@ -55,6 +56,8 @@ function App() {
                     <Route path="/settings/background" element={<BackgroundSettings />} />
                     <Route path="/settings/sidebar" element={<SidebarSettings />} />
                     <Route path="/newsPage" element={<NewsPage />} />
+                    <Route path="/libary" element={<OnlineBooks />} />
+
                 </Routes>
             </div>
         </Router>
