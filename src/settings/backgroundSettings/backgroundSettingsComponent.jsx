@@ -3,8 +3,6 @@ import Sidebar from '../../components/sidebar/sidebar';
 import background1 from '../../assets/backgrounds/background1.jpg';
 import background2 from '../../assets/backgrounds/background2.jpg';
 import background3 from '../../assets/backgrounds/background3.png';
-import background4 from '../../assets/backgrounds/_backgound4.jpeg';
-import background5 from '../../assets/backgrounds/background5.jpeg';
 import background4 from '../../assets/backgrounds/background4.jpg';
 import background5 from '../../assets/backgrounds/background5.jpg';
 import background6 from '../../assets/backgrounds/background6.jpg';
