@@ -2,12 +2,12 @@ import React from 'react';
 import './onlineBooks.css'; 
 const books = [
   {
-    title: 'Book 1',
+    title: 'Learn C',
     cover: '/covers/cover1.jpg',
     file: '/books/book1.pdf',
   },
   {
-    title: 'Book 2',
+    title: 'Docker Deep Dive',
     cover: '/covers/cover2.jpg',
     file: '/books/book2.pdf',
   },
