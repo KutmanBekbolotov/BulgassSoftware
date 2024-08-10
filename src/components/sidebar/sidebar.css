@@ -36,7 +36,7 @@
 .sidebar_toggle {
     position: absolute;
     top: 2%;
-    left: 2%;
+    left: 4%;
     background-color: #000000;
     border-radius: 15px;
     color: white;
@@ -90,7 +90,7 @@
     }
 
     .sidebar-content{
-        padding: 4%;
+        padding: 10%;
         margin-top: 50%;
     }
 }

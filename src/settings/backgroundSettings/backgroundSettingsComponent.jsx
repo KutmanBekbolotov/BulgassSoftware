@@ -21,7 +21,11 @@ const gradients = [
   'linear-gradient(to right, #ef32d9, #89fffd)', // azure pop
   'linear-gradient(to right, #3a6186, #89253e)', // love couples
   'linear-gradient(to right, #4ecdc4, #556270)', // disco
-  'linear-gradient(to right, #a1ffce, #faffd1)'  // limeade
+  'linear-gradient(to right, #a1ffce, #faffd1)', // limeade
+  'linear-gradient(to right, #d53369, #daae51)', // bloody mimosa
+  'linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%)', //aqua sprey
+  'linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%)', //shady lane
+  'linear-gradient(90deg, #0700b8 0%, #00ff88 100%)', //Ooey gooey
 ];
 
 const BackgroundSettingsComponent = () => { 

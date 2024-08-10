@@ -32,6 +32,9 @@ const Home = () => (
                 <h1>Web OS</h1>
                 <pre>version: development</pre>
             </div>
+            <div className="sidebar">
+                
+            </div>
             <div className="weather-container">
                 <WeatherWidget />
             </div>
