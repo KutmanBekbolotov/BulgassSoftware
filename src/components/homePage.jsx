@@ -19,7 +19,7 @@ const services = [
     { name: 'Note', icon: note, link: 'https://onlinenotepad.org/notepad'},
     { name: 'Instagram', icon: instagram1, link: 'https://www.instagram.com/bulgass.it/'},
     { name: 'Tg group', icon: telega, link: 'https://t.me/+ejlSjQzju0UyZTQy'},
-    { name: 'GitGub', icon: github, link: 'https://github.com/'},
+    { name: 'GitGub', icon: GitGub, link: 'https://github.com/'},
     { name: 'ChatGPT', icon: chatgpt, link: 'https://chatgpt.com/'},
 ];
 
