@@ -1,17 +1,25 @@
 import React from 'react';
-import Sidebar from "../sidebar/sidebar";
-import './onlineBooks.css'; 
+import Sidebar from "../components/sidebar/sidebar";
+import Cbook from "../assets/bookCover/Cbook.png";
+import DockerDeepDive from "../assets/bookCover/DockerDeepDive.jpg"
+import reactBook from "../assets/bookCover/reactBook.jpg"
+import './libary.css'; 
 const books = [
   {
-    title: 'Book 1',
-    cover: '/covers/cover1.jpg',
+    title: 'Learn C',
+    cover: Cbook,
     file: '/books/book1.pdf',
   },
   {
-    title: 'Book 2',
-    cover: '/covers/cover2.jpg',
+    title: 'Docker Deep Dive',
+    cover: DockerDeepDive,
     file: '/books/book2.pdf',
   },
+  {
+    title: 'React Book',
+    cover: reactBook,
+    file: '/books/book3.pdf'
+  }
 ];
 
 const OnlineBooks = () => {
