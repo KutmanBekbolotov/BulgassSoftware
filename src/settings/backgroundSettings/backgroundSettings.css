@@ -1,0 +1,67 @@
+.button-container {
+    margin-top: 10%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+.toggle-button:hover {
+    background-color: #505050;
+    transform: scale(1.1);
+}
+
+.background-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.backgrounds {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.background-item {
+    width: 150px;
+    height: 100px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    transition: border-color 0.3s;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+.background-item.selected {
+    border-color: rgb(248, 248, 248);
+    transform: scale(1.1);
+}
+
+.set-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.set-button:hover {
+    background-color: #555555;
+    transform: scale(1.1);
+}

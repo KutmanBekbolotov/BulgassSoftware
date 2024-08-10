@@ -6,6 +6,7 @@ import background3 from '../../assets/backgrounds/background3.png';
 import background4 from '../../assets/backgrounds/background4.jpg';
 import background5 from '../../assets/backgrounds/background5.jpg';
 import background6 from '../../assets/backgrounds/background6.jpg';
+import './backgroundSettings.css'; 
 
 const backgrounds = [
   { url: background1, label: 'Background 1' },
@@ -69,46 +70,35 @@ const BackgroundSettingsComponent = () => {
   };
 
   return (
-    <div style={{ padding: '20px', minHeight: '100vh' }}> 
+    <div style={{ padding: '30px', minHeight: '100vh' }}> 
       <Sidebar />
       <h2>Настройки фона</h2>
-      <div>
-        <h3>Выберите фон:</h3>
-        <button onClick={() => setIsImageBackground(true)}>Изображение</button>
-        <button onClick={() => setIsImageBackground(false)}>Градиент</button>
+      <div className="button-container">
+        <button onClick={() => setIsImageBackground(true)} className="toggle-button">Изображение</button>
+        <button onClick={() => setIsImageBackground(false)} className="toggle-button">Градиент</button>
       </div>
-      <div>
+      <div className="background-container">
         {isImageBackground ? (
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <div className="backgrounds">
             {backgrounds.map((bg, index) => (
               <div
                 key={index}
+                className={`background-item ${selectedBackground === bg.url ? 'selected' : ''}`}
                 style={{
                   backgroundImage: `url(${bg.url})`,
-                  width: '150px',
-                  height: '100px',
-                  margin: '10px',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  border: selectedBackground === bg.url ? '2px solid blue' : '2px solid transparent',
-                  cursor: 'pointer'
                 }}
                 onClick={() => handleBackgroundChange(bg.url)}
               ></div>
             ))}
           </div>
         ) : (
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <div className="backgrounds">
             {gradients.map((gradient, index) => (
               <div
                 key={index}
+                className={`background-item ${selectedBackground === gradient ? 'selected' : ''}`}
                 style={{
                   background: gradient,
-                  width: '150px',
-                  height: '100px',
-                  margin: '10px',
-                  border: selectedBackground === gradient ? '2px solid blue' : '2px solid transparent',
-                  cursor: 'pointer'
                 }}
                 onClick={() => handleBackgroundChange(gradient)}
               ></div>
@@ -118,15 +108,7 @@ const BackgroundSettingsComponent = () => {
       </div>
       <button 
         onClick={handleSetBackground}
-        style={{
-          marginTop: '20px',
-          padding: '10px 20px',
-          backgroundColor: 'blue',
-          color: 'white',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer'
-        }}
+        className="set-button"
       >
         Установить
       </button>
