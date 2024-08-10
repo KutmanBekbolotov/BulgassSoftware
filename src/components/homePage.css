@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-  width: 80%;
+  width: 70%;
   height: 10%;
   background-color: rgba(0, 0, 0, 0.5);
   color: beige;
@@ -16,7 +16,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
   text-align: center;
   margin: 2% auto;
-  margin-right: 15px;
+  margin-right: 95px;
 }
 
 h1 {
