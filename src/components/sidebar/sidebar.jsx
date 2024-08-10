@@ -13,7 +13,7 @@ const Sidebar = () => {
     return (
         <>
             <button className={!changeSide ? 'sidebar_toggle_right' : 'sidebar_toggle'} onClick={toggleSidebar}>
-                {isOpen ? '≪' : '≫'}
+                {isOpen ? 'close' : 'open'}
             </button>
             <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
                 <div className="sidebar-content">
