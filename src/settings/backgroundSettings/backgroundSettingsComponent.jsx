@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Sidebar from '../../components/sidebar/sidebar';
 import background1 from '../../assets/backgrounds/background1.jpg';
-import background2 from '../../assets/backgrounds/background2.jpeg';
+import background2 from '../../assets/backgrounds/background2.jpg';
 import background3 from '../../assets/backgrounds/background3.png';
 import background4 from '../../assets/backgrounds/_backgound4.jpeg';
 import background5 from '../../assets/backgrounds/background5.jpeg';
+import background4 from '../../assets/backgrounds/background4.jpg';
+import background5 from '../../assets/backgrounds/background5.jpg';
+import background6 from '../../assets/backgrounds/background6.jpg';
+import './backgroundSettings.css'; 
 
 const backgrounds = [
   { url: background1, label: 'Background 1' },
@@ -12,13 +16,18 @@ const backgrounds = [
   { url: background3, label: 'Background 3' },
   { url: background4, label: 'Background 4' },
   { url: background5, label: 'Background 5' },
+  { url: background6, label: 'Background 6' },
 ];
 
 const gradients = [
   'linear-gradient(to right, #ef32d9, #89fffd)', // azure pop
   'linear-gradient(to right, #3a6186, #89253e)', // love couples
   'linear-gradient(to right, #4ecdc4, #556270)', // disco
-  'linear-gradient(to right, #a1ffce, #faffd1)'  // limeade
+  'linear-gradient(to right, #a1ffce, #faffd1)', // limeade
+  'linear-gradient(to right, #d53369, #daae51)', // bloody mimosa
+  'linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%)', //aqua sprey
+  'linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%)', //shady lane
+  'linear-gradient(90deg, #0700b8 0%, #00ff88 100%)', //Ooey gooey
 ];
 
 const BackgroundSettingsComponent = () => { 
@@ -67,46 +76,35 @@ const BackgroundSettingsComponent = () => {
   };
 
   return (
-    <div style={{ padding: '20px', minHeight: '100vh' }}> 
+    <div style={{ padding: '30px', minHeight: '100vh' }}> 
       <Sidebar />
       <h2>Настройки фона</h2>
-      <div>
-        <h3>Выберите фон:</h3>
-        <button onClick={() => setIsImageBackground(true)}>Изображение</button>
-        <button onClick={() => setIsImageBackground(false)}>Градиент</button>
+      <div className="button-container">
+        <button onClick={() => setIsImageBackground(true)} className="toggle-button">Изображение</button>
+        <button onClick={() => setIsImageBackground(false)} className="toggle-button">Градиент</button>
       </div>
-      <div>
+      <div className="background-container">
         {isImageBackground ? (
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <div className="backgrounds">
             {backgrounds.map((bg, index) => (
               <div
                 key={index}
+                className={`background-item ${selectedBackground === bg.url ? 'selected' : ''}`}
                 style={{
                   backgroundImage: `url(${bg.url})`,
-                  width: '150px',
-                  height: '100px',
-                  margin: '10px',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  border: selectedBackground === bg.url ? '2px solid blue' : '2px solid transparent',
-                  cursor: 'pointer'
                 }}
                 onClick={() => handleBackgroundChange(bg.url)}
               ></div>
             ))}
           </div>
         ) : (
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <div className="backgrounds">
             {gradients.map((gradient, index) => (
               <div
                 key={index}
+                className={`background-item ${selectedBackground === gradient ? 'selected' : ''}`}
                 style={{
                   background: gradient,
-                  width: '150px',
-                  height: '100px',
-                  margin: '10px',
-                  border: selectedBackground === gradient ? '2px solid blue' : '2px solid transparent',
-                  cursor: 'pointer'
                 }}
                 onClick={() => handleBackgroundChange(gradient)}
               ></div>
@@ -116,15 +114,7 @@ const BackgroundSettingsComponent = () => {
       </div>
       <button 
         onClick={handleSetBackground}
-        style={{
-          marginTop: '20px',
-          padding: '10px 20px',
-          backgroundColor: 'blue',
-          color: 'white',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer'
-        }}
+        className="set-button"
       >
         Установить
       </button>
