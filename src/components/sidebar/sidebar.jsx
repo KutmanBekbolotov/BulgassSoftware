@@ -4,12 +4,11 @@ import './sidebar.css';
 
 const Sidebar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [side, setSide] = useState(false);
 
     const toggleSidebar = () => {
         setIsOpen(!isOpen);
     };
-
-    const [side, setSide] = useState(false);
 
     const changeSide = () => {
         setSide(!side)
@@ -17,10 +16,10 @@ const Sidebar = () => {
 
     return (
         <>
-            <button className="sidebar_toggle" onClick={toggleSidebar}>
+            <button className={`${!side ? 'sidebar_toggle' : 'sidebar_toggle_right' }`} onClick={toggleSidebar}>
                 {isOpen ? '≪' : '≫'}
             </button>
-            <aside className={`sidebar ${isOpen ? 'open' : ''} ${side ? 'rightSide': ''}`}>
+            <aside className={`${isOpen ? 'open' : ''} ${side ? 'rightSide': 'sidebar'}`}>
                 <div className="sidebar-content">
                     <Link to="/" className="sidebar-link" onClick={toggleSidebar}>Home</Link>
                     <Link to="/see-more" className="sidebar-link" onClick={toggleSidebar}>More</Link>
@@ -28,7 +27,7 @@ const Sidebar = () => {
                     <Link to="/newsPage" className="sidebar-link" onClick={toggleSidebar}>News</Link>
                     <Link to="/settings" className="sidebar-link" onClick={toggleSidebar}>Settings</Link>
                 </div>
-                <button onClick={changeSide} className={"changeButton"}>
+                <button onClick={changeSide} className={`${!side ? 'changeButton' : 'changeButtonRight'}`}>
                     Change side
                 </button>
             </aside>
