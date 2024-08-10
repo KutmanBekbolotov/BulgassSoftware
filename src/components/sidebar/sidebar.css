@@ -40,7 +40,7 @@
 .sidebar_toggle {
     position: absolute;
     top: 2%;
-    left: 2%;
+    left: 4%;
     background-color: #000000;
     border-radius: 15px;
     color: white;
@@ -122,4 +122,15 @@
     border: none;
     cursor: pointer;
 
+}
+@media screen and (max-width: 768px){
+    .sidebar{
+        width: 150px;
+        right: 15px;
+    }
+
+    .sidebar-content{
+        padding: 10%;
+        margin-top: 50%;
+    }
 }

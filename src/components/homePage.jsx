@@ -9,6 +9,8 @@ import WeatherWidget from "./widgets/weatherWidget/weatherWidget";
 import Clock from "./widgets/clockWidget/clockWidget"
 import instagram1 from "../assets/icons/instagram1.webp";
 import telega from "../assets/icons/telega.png";
+import github from "../assets/icons/github.png";
+import chatgpt from "../assets/icons/chatgpt.png";
 
 const services = [
     { name: 'Listen Up', icon: logo, link: 'https://listen-upp.netlify.app' },
@@ -17,6 +19,8 @@ const services = [
     { name: 'Note', icon: note, link: 'https://onlinenotepad.org/notepad'},
     { name: 'Instagram', icon: instagram1, link: 'https://www.instagram.com/bulgass.it/'},
     { name: 'Tg group', icon: telega, link: 'https://t.me/+ejlSjQzju0UyZTQy'},
+    { name: 'GitGub', icon: github, link: 'https://github.com/'},
+    { name: 'ChatGPT', icon: chatgpt, link: 'https://chatgpt.com/'},
 ];
 
 const Home = () => (
@@ -27,6 +31,9 @@ const Home = () => (
                 <img src={bulgass} alt="Header" className="header-image" />
                 <h1>Web OS</h1>
                 <pre>version: development</pre>
+            </div>
+            <div className="sidebar">
+                
             </div>
             <div className="weather-container">
                 <WeatherWidget />
