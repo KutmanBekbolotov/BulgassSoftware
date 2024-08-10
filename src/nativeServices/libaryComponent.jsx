@@ -1,4 +1,5 @@
 import React from 'react';
+import Sidebar from "../sidebar/sidebar";
 import './onlineBooks.css'; 
 const books = [
   {
@@ -16,6 +17,7 @@ const books = [
 const OnlineBooks = () => {
   return (
     <div className="books-container">
+         <Sidebar/>
       {books.map((book, index) => (
         <div className="book-item" key={index}>
           <a href={book.file} target="_blank" rel="noopener noreferrer">
