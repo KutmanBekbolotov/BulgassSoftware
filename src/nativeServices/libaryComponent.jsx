@@ -3,23 +3,26 @@ import Sidebar from "../components/sidebar/sidebar";
 import Cbook from "../assets/bookCover/Cbook.png";
 import DockerDeepDiveCover from "../assets/bookCover/DockerDeepDive.jpg"; // No need to import PDF
 import reactBook from "../assets/bookCover/reactBook.jpg";
+import Docker from "../assets/books/Docker.pdf";
+import LearnReact from "../assets/books/LearnReact.pdf";
+import LearnC from "../assets/books/LearnC.pdf";
 import './libary.css';
 
 const books = [
   {
     title: 'Learn C',
     cover: Cbook,
-    file: '/assets/books/learnC.pdf', // Correct path
+    file: LearnC, // Correct path
   },
   {
     title: 'Docker Deep Dive',
     cover: DockerDeepDiveCover,
-    file: '/assets/books/DockerDeepDive.pdf', // Correct path
+    file: Docker, // Correct path
   },
   {
     title: 'React Book',
     cover: reactBook,
-    file: '/assets/books/reactBook.pdf',
+    file: LearnReact,
   }
 ];
 
@@ -32,6 +35,7 @@ const OnlineBooks = () => {
           <a href={book.file} target="_blank" rel="noopener noreferrer">
             <img src={book.cover} alt={book.title} className="book-cover" />
           </a>
+          <p className='book-name'>{book.title}</p>
           <a href={book.file} download className="download-button">
             Download
           </a>

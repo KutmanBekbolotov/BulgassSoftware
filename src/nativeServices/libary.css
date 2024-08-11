@@ -23,6 +23,12 @@
   .book-cover:hover {
     transform: scale(1.1);
   }
+
+  .book-name{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }
   
   .download-button {
     margin-top: 10px;

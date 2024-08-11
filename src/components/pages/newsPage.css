@@ -43,6 +43,7 @@
     align-content: center;
     text-align: center;
     margin-left: 10px;
+    color: black;
 }
 .regvoi:hover{
     background-color: black;

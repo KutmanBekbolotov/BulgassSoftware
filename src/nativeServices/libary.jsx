@@ -1,12 +1,12 @@
 import React from "react";
 import OnlineBooks from "./libaryComponent";
 
-const books = () => {
+const Books = () => {
 
     return(
-        <div className='books'>
+        <div className='libary'>
             <OnlineBooks/>
         </div>
     );
 };
-export default books;
+export default Books;
