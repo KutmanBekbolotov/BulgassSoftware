@@ -24,7 +24,7 @@ const NewsPage = () =>{
                         <div className="news_red_text">NEWS</div>
                         <div className="news_body_grid">
                             <div className="news_body_grid2 news_body_hover">
-                                <img width={500} className="news_body_img" src="https://ichef.bbci.co.uk/news/1536/cpsprodpb/d030/live/29de6920-556e-11ef-b2d2-cdb23d5d7c5b.jpg.webp" alt="" />
+                                <img className="news_body_img" src="https://ichef.bbci.co.uk/news/1536/cpsprodpb/d030/live/29de6920-556e-11ef-b2d2-cdb23d5d7c5b.jpg.webp" alt="" />
                                 <p  className="news_body_text">Стив Розенберг: вторжение Украины показывает, что война России не идет по плану</p >
                                 <p  className="news_body_text2">Атака на «Курск» побудила некоторых россиян призвать к более масштабному военному наступлению на Украину.</p >
                                 <p  className="news_body_text3">6 часов назад | Европа</p >
