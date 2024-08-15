@@ -29,8 +29,10 @@ const Home = () => (
             <Sidebar />
             <div className="header">
                 <img src={bulgass} alt="Header" className="header-image" />
+                <div className="text-header">
                 <h1>Web OS</h1>
                 <pre>version: development</pre>
+                </div>
             </div>
               <div className="container-widget">
                  <div className="weather-container">
