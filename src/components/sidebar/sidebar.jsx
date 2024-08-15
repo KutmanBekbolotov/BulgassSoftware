@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './sidebar.css';
 
 const Sidebar = () => {
+
     const [isOpen, setIsOpen] = useState(false);
     const [side, setSide] = useState(false);
 
@@ -14,13 +15,11 @@ const Sidebar = () => {
         setSide(!side)
     };
 
+
     return (
-        <>
+        <div>
             <button className={`${!side ? 'sidebar_toggle' : 'sidebar_toggle_right' }`} onClick={toggleSidebar}>
-                {isOpen ? '≪' : '≫'}
-                <button className={!changeSide ? 'sidebar_toggle_right' : 'sidebar_toggle'} onClick={toggleSidebar}>
-                    {isOpen ? 'close' : 'open'}
-                </button>
+                {isOpen ? '≪' : '≫'} </button>
                 <aside className={`${isOpen ? 'open' : ''} ${side ? 'rightSide': 'sidebar'}`}>
                     <div className="sidebar-content">
                         <Link to="/" className="sidebar-link" onClick={toggleSidebar}>Home</Link>
@@ -33,7 +32,7 @@ const Sidebar = () => {
                         Change side
                     </button>
                 </aside>
-        </>
+        </div>
     );
 };
 
