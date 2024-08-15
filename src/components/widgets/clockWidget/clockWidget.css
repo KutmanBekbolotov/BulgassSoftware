@@ -1,13 +1,15 @@
 svg {
-  position: relative;
-  width: 390px;
-  height: 285px;
+  /* position: relative; */
+  width: 50%;
+  height: 50%;
+  padding: 4rem;
   background: linear-gradient(black 60%, #000000 100%);
   border-radius: 15px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
   overflow: hidden; 
   margin-right: 210px;
   margin-top: -50px;
+
 }
 
 .bgDot {
@@ -51,11 +53,12 @@ svg {
 
 .dateText {
   font-size: 1.2rem; 
-  font-weight: 400;
+  font-weight: bold;
 }
 
 .timeText {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.1rem;   font-weight: 200;
+  font-size: 1.1rem;   
+  font-weight: 200;
   fill: white;
 }

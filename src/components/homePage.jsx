@@ -32,15 +32,14 @@ const Home = () => (
                 <h1>Web OS</h1>
                 <pre>version: development</pre>
             </div>
-            <div className="sidebar">
-                
-            </div>
-            <div className="weather-container">
-                <WeatherWidget />
-            </div>
-            <div className="clock-container">
-                <Clock />
-            </div>
+              <div className="container-widget">
+                 <div className="weather-container">
+                     <WeatherWidget />
+                 </div>
+                 <div className="clock-container">
+                     <Clock />
+                 </div>
+                </div>  
         </div>
         <div className="services">
             {services.map((service) => (
