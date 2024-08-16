@@ -1,4 +1,4 @@
-.container {
+.container-newsss {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -6,13 +6,16 @@
 }
 
 .news_container {
+    /* overflow: hidden; */
     max-width: 100%;
-    width: 600px; /* Reduced from 800px */
+    height: 1200px;
+    width: 650px; /* Reduced from 800px */
     background-color: rgb(249, 249, 249);
     border-radius: 5px;
     margin-top: 40px; /* Reduced from 50px */
     padding: 15px; /* Reduced from 20px */
     box-sizing: border-box;
+    
 }
 
 .news_header {
@@ -31,7 +34,8 @@
 
 .header_img {
     width: 140px; /* Reduced from 170px */
-    margin-top: -29px;
+    margin-top: 0px;
+    margin-left: -70px;
 }
 
 .regis_voiti {

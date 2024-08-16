@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Sidebar from "../sidebar/sidebar";
 import './newsPage.css';
+import bulgass from '../../assets/icons/bulgass.png';
 
 const NewsPage = () => {
     const [news, setNews] = useState([]);
@@ -32,13 +33,13 @@ const NewsPage = () => {
 
     return (
         <>
-            <div className="container">
+            <div className="container-newsss">
                 <Sidebar />
                 <div className="news_container">
                     <div className="news_header">
                         <div className="news_header2">
                             <div>
-                                <img className="header_img" src="https://logos-world.net/wp-content/uploads/2022/01/BBC-Logo.png" alt="BBC Logo" />
+                                <img className="header_img" src={bulgass} alt="BBC Logo" />
                             </div>
                             <div className="regis_voiti">
                                 <div className="regis regvoi">Регистрация</div>
@@ -52,9 +53,7 @@ const NewsPage = () => {
                         <div className="news_body_grid">
                             {news.map((item, index) => (
                                 <div className="news_body_grid2 news_body_hover" key={index}>
-                                    <img width={250} height={150} className="news_body_img2" src={"https://via.placeholder.com/250"} alt={item.title} />
                                     <p className="news_body_text4">{item.title}</p>
-                                    <p className="news_body_text2">{item.description}</p>
                                     <p className="news_body_text3">{new Date(item.pubDate).toLocaleString()}</p>
                                     <a href={item.link} target="_blank" rel="noopener noreferrer" className="read_more">Читать далее</a>
                                 </div>
