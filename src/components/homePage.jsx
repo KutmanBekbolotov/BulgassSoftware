@@ -31,7 +31,7 @@ const Home = () => (
                 <img src={bulgass} alt="Header" className="header-image" />
                 <div className="text-header">
                 <h1>Web OS</h1>
-                <pre>version: development</pre>
+                <pre>version: 1.0 (Beta)</pre>
                 </div>
             </div>
               <div className="container-widget">
