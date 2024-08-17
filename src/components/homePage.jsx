@@ -1,5 +1,4 @@
 import React from "react";
-import "./homePage.css";
 import logo from "../assets/icons/logo.gif";
 import bulgass from "../assets/icons/bulgass.png"; 
 import react from "../assets/icons/react.png";
@@ -11,6 +10,7 @@ import instagram1 from "../assets/icons/instagram1.webp";
 import telega from "../assets/icons/telega.png";
 import github from "../assets/icons/github.png";
 import chatgpt from "../assets/icons/chatgpt.png";
+import "./homePage.css";
 
 const services = [
     { name: 'Listen Up', icon: logo, link: 'https://listen-upp.netlify.app' },
