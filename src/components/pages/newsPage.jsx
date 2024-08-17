@@ -52,11 +52,11 @@ const NewsPage = () => {
                         <div className="news_body_grid">
                             {news.map((item, index) => (
                                 <div className="news_body_grid2 news_body_hover" key={index}>
-                                    <img width={250} height={150} className="news_body_img2" src={"https://via.placeholder.com/250"} alt={item.title} />
-                                    <p className="news_body_text4">{item.title}</p>
-                                    <p className="news_body_text2">{item.description}</p>
-                                    <p className="news_body_text3">{new Date(item.pubDate).toLocaleString()}</p>
-                                    <a href={item.link} target="_blank" rel="noopener noreferrer" className="read_more">Читать далее</a>
+                                    <p className="news_body_text2">{item.title}</p>
+                                    <p className="news_body_text1">{new Date(item.pubDate).toLocaleString()}</p>
+                                    <p className="read_more">
+                                    <a href={item.link} target="_blank" rel="noopener noreferrer" >Читать далее</a>
+                                    </p>
                                 </div>
                             ))}
                         </div>

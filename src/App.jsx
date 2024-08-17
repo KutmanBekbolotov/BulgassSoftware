@@ -57,7 +57,6 @@ function App() {
                     <Route path="/settings/sidebar" element={<SidebarSettings />} />
                     <Route path="/newsPage" element={<NewsPage />} />
                     <Route path="/libary" element={<OnlineBooks/>} />
-
                 </Routes>
             </div>
         </Router>
