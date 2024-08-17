@@ -28,34 +28,9 @@
 }
 
 .header_img {
-    width: 20%; /* Reduced from 170px */
-    margin-top: -29px;
-}
-
-.regis_voiti {
-    display: flex;
-}
-.regis {
-    width: 100%; /* Reduced from 100px */
-    height: 50%; /* Reduced from 30px */
-    background-color: black;
-    color: aliceblue;
-    align-content: center;
-    text-align: center;
-    font-weight: bold;
-    font-size: 12px; /* Reduced font size */
-}
-
-.voiti {
-    width: 100%; /* Reduced from 100px */
-    height: 50%; /* Reduced from 30px */
-    align-content: center;
-    text-align: center;
+    width: 10%; /* Reduced from 170px */
     margin-left: 10px;
-    color: black;
-    font-size: 12px; /* Reduced font size */
 }
-
 .bbc_img {
     width: 100%;
     height: 100%; /* Reduced from 100px */
@@ -84,7 +59,7 @@
 .news_body_grid {
     display: grid;
     grid-template-columns: repeat(3,33%); /* Reduced from 250px */
-    grid-template-rows: repeat(10, 26%); /* Reduced from 250px */
+    grid-template-rows: repeat(10, 25%); /* Reduced from 250px */
     grid-gap: 5px;
     margin-top: 30px; /* Reduced from 30px */
 }

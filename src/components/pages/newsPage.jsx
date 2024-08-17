@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Sidebar from "../sidebar/sidebar";
+import bulgass from "../../assets/icons/bulgass.png"
 import './newsPage.css';
 
 const NewsPage = () => {
@@ -38,11 +39,7 @@ const NewsPage = () => {
                     <div className="news_header">
                         <div className="news_header2">
                             <div>
-                                <img className="header_img" src="https://logos-world.net/wp-content/uploads/2022/01/BBC-Logo.png" alt="BBC Logo" />
-                            </div>
-                            <div className="regis_voiti">
-                                <div className="regis regvoi">Регистрация</div>
-                                <div className="voiti regvoi">Войти</div>
+                                <img className="header_img" src={bulgass} alt="" />
                             </div>
                         </div>
                         <div className="bbc_img"><img className="bbc_img2" src="https://tpc.googlesyndication.com/simgad/10902681628556711741" alt="Advertisement" /></div>
