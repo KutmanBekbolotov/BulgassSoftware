@@ -37,12 +37,7 @@ const NewsPage = () => {
                 <Sidebar />
                 <div className="news_container">
                     <div className="news_header">
-                        <div className="news_header2">
-                            <div>
-                                <img className="header_img" src={bulgass} alt="" />
-                            </div>
-                        </div>
-                        <div className="bbc_img"><img className="bbc_img2" src="https://tpc.googlesyndication.com/simgad/10902681628556711741" alt="Advertisement" /></div>
+                        <img className="header_img" src={bulgass} alt="" />
                     </div>
                     <div className="news_body">
                         <div className="news_red_text">NEWS</div>
