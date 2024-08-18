@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './components/homePage';
 import SeeMore from './components/pages/seeMore'; 
 import Tutorial from "./nativeServices/tutorial";
+import OnlineBooks from "./nativeServices/libary";
 import Settings from "./settings/settings";
 import BackgroundSettings from "./settings/backgroundSettings/backgroundSettings";
 import SidebarSettings from "./settings/sidebarSettings/sidebarSettings"; 
@@ -55,6 +56,8 @@ function App() {
                     <Route path="/settings/background" element={<BackgroundSettings />} />
                     <Route path="/settings/sidebar" element={<SidebarSettings />} />
                     <Route path="/newsPage" element={<NewsPage />} />
+                    <Route path="/libary" element={<OnlineBooks/>} />
+
                 </Routes>
             </div>
         </Router>

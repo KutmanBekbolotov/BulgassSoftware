@@ -52,7 +52,7 @@ const NewClock = () => {
   }, []);
 
   return (
-    <svg width="400" height="250" viewBox="0 0 400 250">
+    <svg  viewBox="0 0 300 250">
       <defs>
         <pattern id="dotPattern" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
           <circle className="bgDot" cx="4" cy="4" r="1.5" />

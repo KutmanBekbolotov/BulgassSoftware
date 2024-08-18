@@ -3,7 +3,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 20%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
@@ -12,8 +11,11 @@
     transform: translateX(-250px);
     display: flex;
     flex-direction: column;
+    padding-right: 4rem;
+    z-index: 11;
 }
 .rightSide {
+    z-index: 15;
     position: fixed;
     top: 0;
     right: 0;
@@ -76,8 +78,8 @@
     padding: 10%;
 }
 .sidebar-content-right{
-    margin-top: 30%;
     margin-left: 50%;
+    margin-top: 60%;
     padding: 10%;
 }
 
@@ -125,12 +127,11 @@
 }
 @media screen and (max-width: 768px){
     .sidebar{
-        width: 150px;
-        right: 15px;
+        width: 15%;
     }
-
     .sidebar-content{
         padding: 10%;
         margin-top: 50%;
     }
 }
+
