@@ -1,5 +1,6 @@
 svg {
   position: relative;
+  display: flex;
   width: 390px;
   height: 285px;
   background: linear-gradient(black 60%, #000000 100%);

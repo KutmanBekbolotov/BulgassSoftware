@@ -16,7 +16,6 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
   text-align: center;
   margin: 2% auto;
-  margin-right: 15px;
 }
 
 h1 {
@@ -48,6 +47,7 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
   gap: 0.3rem;
   box-sizing: border-box;
+  margin-bottom: 100px;
 }
 
 .icon {
@@ -73,15 +73,17 @@ h1 {
 }
 
 .clock-container {
-  margin: 10px;
   margin-right: 15%;
-  margin-top: -25%;
+  margin-top: -18%;
+  width: 400px;
 }
 
 .weather-container {
-  margin-top: 5%;
+  margin-top: 10%;
   margin-left: 20%;
 }
+
+
 
 @media screen and (max-width: 768px) {
   .services {
@@ -94,9 +96,16 @@ h1 {
     height: 60px;
   }
 
-  .clock-container, .weather-container {
+  .clock-container{
     margin-top: 2%;
     margin-left: 0;
+    margin-right: 0;
+    transform: scale(0.8);
+    width: 312px;
+  }
+  .weather-container{
+    margin-top: 2%;
+    margin-left: -35%;
     margin-right: 0;
     transform: scale(0.8);
   }
@@ -112,7 +121,7 @@ h1 {
 .header{
   height:5%;
   margin:0%;
-  margin-left: -82%;
+  margin-left: -52%;
   margin-top: 5%;
   padding:1%;
 }
@@ -136,8 +145,8 @@ h1 {
 
   .clock-container {
     margin-top: 2%;
-    margin-left: -38px;
-    margin-right: 115px;
+    margin-left: -108px;
+    margin-right: 155px;
     transform: scale(0.8);
   }
 
